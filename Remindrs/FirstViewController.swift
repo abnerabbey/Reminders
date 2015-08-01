@@ -10,6 +10,20 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    // MARK: Properties
+    
+    @IBOutlet weak var settingsButton: UIBarButtonItem!
+    @IBOutlet weak var newNoteButton: UIBarButtonItem!
+    
+    // MARK: Actions
+    
+    @IBAction func settingsButtonPressed(sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func newNoteButtonPressed(sender: UIBarButtonItem) {
+    }    
+    
+    // MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
