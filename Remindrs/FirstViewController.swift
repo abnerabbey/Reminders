@@ -8,12 +8,15 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // MARK: Properties
     
     @IBOutlet weak var settingsButton: UIBarButtonItem!
     @IBOutlet weak var newNoteButton: UIBarButtonItem!
+    @IBOutlet weak var notesTableView: UITableView!
+    var reminders: [String]?
+    var dates: [String]?
     
     // MARK: Actions
     
@@ -21,12 +24,15 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func newNoteButtonPressed(sender: UIBarButtonItem) {
-    }    
+    }
     
     // MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let defaults = NSUserDefaults.standardUserDefaults()
+        reminders = defaults.objectForKey("reminders") as! String!
+        dates = defaults.objectForKey("dates") as! String!
+    
         // Do any additional setup after loading the view.
     }
 
