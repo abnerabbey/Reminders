@@ -13,6 +13,7 @@
 		0793C17A1B6B258E0008F4AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0793C1781B6B258E0008F4AE /* LaunchScreen.xib */; };
 		0793C1861B6B258E0008F4AE /* RemindrsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C1851B6B258E0008F4AE /* RemindrsTests.swift */; };
 		0793C1901B6B25C70008F4AE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C18F1B6B25C70008F4AE /* FirstViewController.swift */; };
+		A95B2FBD1B948B1B00858811 /* NewReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B2FBC1B948B1B00858811 /* NewReminderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0793C1841B6B258E0008F4AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0793C1851B6B258E0008F4AE /* RemindrsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindrsTests.swift; sourceTree = "<group>"; };
 		0793C18F1B6B25C70008F4AE /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A95B2FBC1B948B1B00858811 /* NewReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				0793C16F1B6B258E0008F4AE /* AppDelegate.swift */,
 				0793C18F1B6B25C70008F4AE /* FirstViewController.swift */,
 				0793C1731B6B258E0008F4AE /* Main.storyboard */,
+				A95B2FBC1B948B1B00858811 /* NewReminderViewController.swift */,
 				0793C1761B6B258E0008F4AE /* Images.xcassets */,
 				0793C1781B6B258E0008F4AE /* LaunchScreen.xib */,
 				0793C16D1B6B258E0008F4AE /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0793C1701B6B258E0008F4AE /* AppDelegate.swift in Sources */,
+				A95B2FBD1B948B1B00858811 /* NewReminderViewController.swift in Sources */,
 				0793C1901B6B25C70008F4AE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

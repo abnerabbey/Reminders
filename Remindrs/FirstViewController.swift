@@ -24,6 +24,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBAction func newNoteButtonPressed(sender: UIBarButtonItem) {
+        self.presentViewController(NewReminderViewController(), animated: true, completion: nil)
     }
     
     // MARK: Methods
