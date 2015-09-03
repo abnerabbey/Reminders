@@ -24,7 +24,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBAction func newNoteButtonPressed(sender: UIBarButtonItem) {
-        self.presentViewController(NewReminderViewController(), animated: true, completion: nil)
+        var newView = self.storyboard?.instantiateViewControllerWithIdentifier("newNoteView") as! NewReminderViewController!
+        let rootView = UINavigationController(rootViewController: newView)
+        self.presentViewController(rootView, animated: true, completion: nil)
     }
     
     // MARK: Methods

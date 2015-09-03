@@ -75,7 +75,6 @@
                         <barButtonItem key="rightBarButtonItem" title="+" id="NSG-VQ-aRQ">
                             <connections>
                                 <action selector="newNoteButtonPressed:" destination="vXZ-lx-hvc" id="0UT-IK-XtM"/>
-                                <segue destination="H8X-Rh-j19" kind="showDetail" id="CzR-9M-bHI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -106,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRB-Od-MEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="-659"/>
+            <point key="canvasLocation" x="2066" y="-715"/>
         </scene>
         <!--New Reminder View Controller-->
         <scene sceneID="sXc-Lu-NbV">
@@ -125,6 +124,9 @@
                                 <date key="date" timeIntervalSinceReferenceDate="462720034.403431">
                                     <!--2015-08-31 13:20:34 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="datePicker:" destination="H8X-Rh-j19" eventType="valueChanged" id="9Xq-kJ-diX"/>
+                                </connections>
                             </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Reminder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dhu-ZR-LUV">
                                 <rect key="frame" x="16" y="78" width="568" height="30"/>
@@ -142,6 +144,10 @@
                             <constraint firstItem="PWM-iF-NSN" firstAttribute="top" secondItem="3sg-gN-B7O" secondAttribute="bottom" constant="264" id="yP9-BM-XB9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="3sg-gN-B7O" id="2tH-RN-Sug"/>
+                        <outlet property="reminderDescriptionTextField" destination="dhu-ZR-LUV" id="rg5-1w-BgZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoW-oR-0Cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
