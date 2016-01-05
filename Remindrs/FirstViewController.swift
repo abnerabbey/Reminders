@@ -14,6 +14,7 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var settingsButton: UIBarButtonItem!
     @IBOutlet weak var newNoteButton: UIBarButtonItem!
+    @IBOutlet weak var newButton2: UIBarButtonItem!     // This is a test line. Delete after test.
     
     // MARK: Actions
     
